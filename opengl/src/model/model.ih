@@ -1,0 +1,8 @@
+#include "model.h"
+
+#include <QDebug>
+#include <QFile>
+#include <QTextStream>
+#include <tuple>
+#include <QRect>
+#include <fstream>

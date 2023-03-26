@@ -1,0 +1,7 @@
+#include "mainview.h"
+#include <math.h>
+#include "../vertex/vertex.h"
+#include "../model/model.h"
+#include <QDebug>
+#include <QDateTime>
+#include <iostream>

@@ -1,0 +1,34 @@
+{
+	"BUILD_DIR" : "/home/matthijs/programming/cgcomp/opengl/src/OpenGL_2_autogen",
+	"CMAKE_BINARY_DIR" : "/home/matthijs/programming/cgcomp/opengl/src",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/matthijs/programming/cgcomp/opengl/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/matthijs/programming/cgcomp/opengl/src",
+	"CMAKE_SOURCE_DIR" : "/home/matthijs/programming/cgcomp/opengl/src",
+	"INCLUDE_DIR" : "/home/matthijs/programming/cgcomp/opengl/src/OpenGL_2_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/matthijs/programming/cgcomp/opengl/src/textures/cat_norm.png",
+		"/home/matthijs/programming/cgcomp/opengl/src/textures/cat_spec.png",
+		"/home/matthijs/programming/cgcomp/opengl/src/textures/cat_diff.png",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/fragshader_phong.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/vertshader_phong.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/vertshader_gouraud.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/fragshader_gouraud.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/fragshader_cell.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/vertshader_cell.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/fragshader_normal.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/shaders/vertshader_normal.glsl",
+		"/home/matthijs/programming/cgcomp/opengl/src/models/cat.obj",
+		"/home/matthijs/programming/cgcomp/opengl/src/models/knot.obj"
+	],
+	"LOCK_FILE" : "/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/OpenGL_2_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/OpenGL_2_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/matthijs/programming/cgcomp/opengl/src/resources.qrc",
+	"VERBOSITY" : 0
+}

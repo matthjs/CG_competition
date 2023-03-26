@@ -1,0 +1,4 @@
+/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/OpenGL.dir
+/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/edit_cache.dir
+/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/rebuild_cache.dir
+/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles/OpenGL_autogen.dir
