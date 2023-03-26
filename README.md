@@ -7,7 +7,7 @@ The other addition is adding anisotropic filtering.
 I originally intended to add support for multiple textures (+ raw data loading), but I end up not setting
 aside enough time for that. Hence the code currently includes some incomplete code related to that.
 It is worth noting that the code already supports multiple model loading, however all models are
-not unitized and all are fixed on the same location in world space.
+not unitized and are all fixed on the same location in world space.
 
 There are also a few fixes made from the base code:
 - Optimized model rendering by loading static mesh data in initializeGL, instead of in paintGL
@@ -18,13 +18,25 @@ There are also a few fixes made from the base code:
 Compiling the code:
 I do not use CGCREATER so I will describe here how to build the project using the
 existing build utilities.
+In the src directory do:
 - run "cmake" CMakeLists.txt to generate the Makefile
 - run "make"
 - run "./OpenGL"
 
 # Showcase
+Here is how the cat model looks like using cell shading:
+![alt text](Isolated.png "./logs/cat_cell.png")
 
+Cell-shading is commonly used in anime-style games/3d animations to
+replicate the style and feel of the 2D drawings. So here is an
+example of cell shading on an anime character:
+![alt text](Isolated.png "./logs/emilia_cell_text.png")
+which fits a bit better than the phong illumination:
+![alt text](Isolated.png "./logs/emilia_phong_text.png")
+(Note that the texture mapping is not correct)
 
 
 Unrelated. But when you normalize all vertices on the cat model you
 get this monstrosity:
+![alt text](Isolated.png "./logs/cat?_phong.png")
+(note that Phong shader is used here)
