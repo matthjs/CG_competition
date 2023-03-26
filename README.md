@@ -38,5 +38,5 @@ which fits a bit better than the phong illumination:
 
 Unrelated. But when you normalize all vertices on the cat model you
 get this monstrosity:
-!["Uhhhhh"](./opengl/src/logs/cat?_phong.png)
+!["Uhhhhh"](./opengl/src/logs/catt_phong.png)
 (note that Phong shader is used here)
