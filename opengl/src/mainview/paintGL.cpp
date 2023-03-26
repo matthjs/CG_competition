@@ -21,7 +21,7 @@ void MainView::paintGL()
 
     for (auto &model : d_models)
     {
-        // set value of uniform variables (send matrix info to GPU)
+        // set value of relevant uniform variables (send matrix info to GPU)
         glUniformMatrix4fv
         (
             *(d_shaderUniforms[d_currentShadingMode]["modelViewTransform"]),
@@ -39,39 +39,7 @@ void MainView::paintGL()
         );
 
         glBindVertexArray(model->VAO());
-
         glBindTexture(GL_TEXTURE_2D, model->textureID());
-
-        /*
-        // texture stuff
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, model->textureID());
-        // set how openGL will interpret texture
-        setTextureInterpretation();
-        // upload texture data
-        uploadTextureData(*model);
-        glGenerateMipmap(GL_TEXTURE_2D);
-        */
-
-        /*
-        // upload vertices to the GL_ARRAY_BUFFER
-        glBufferData(GL_ARRAY_BUFFER, model->getVertices().size() * sizeof(Vertex), model->getVertices().data(), GL_STATIC_DRAW);
-
-        // Set vertex coordinates to location 0
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),
-                                reinterpret_cast<GLvoid *>(0));
-        glEnableVertexAttribArray(0);
-
-        // Set color values to location 1
-        glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex),
-                                reinterpret_cast<GLvoid *>(3 * sizeof(GLfloat)));
-        glEnableVertexAttribArray(1);
-
-        // set texture coordinates in location 2
-        glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex),
-                                reinterpret_cast<GLvoid *>(6 * sizeof(GLfloat)));
-        glEnableVertexAttribArray(2);
-        */
 
         glDrawArrays(GL_TRIANGLES, 0, model->getVertices().size());
     }

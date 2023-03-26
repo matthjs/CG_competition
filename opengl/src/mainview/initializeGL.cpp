@@ -23,10 +23,8 @@ void MainView::initializeGL()
 
     // Enable depth buffer
     glEnable(GL_DEPTH_TEST);
-
     // Enable backface culling
     glEnable(GL_CULL_FACE);
-
     // Default is GL_LESS
     glDepthFunc(GL_LEQUAL);
 
@@ -36,11 +34,7 @@ void MainView::initializeGL()
 
     createShaderProgram();
 
-    //loadMesh(":/models/cat.obj", ":/textures/cat_diff.png");
-    //loadMesh("./models/jigg/P1.obj", "./models/textures/")
-    //loadMesh("./models/cat.obj", "./textures/cat_diff.png");
-    //loadMesh("./background/neon-stage/source/neon.obj", ".background/neon-stage/textures/BackGround.png");
-    loadMesh("./models/emilia/source/emilia-posed.obj", "./models/emilia/textures/pele_png.png");
+    loadMesh("./models/emilia/source/emilia-posed.obj", "./textures/emilia-texture.png");
 
     // Initialize transformations
     updateProjectionTransform();
@@ -85,8 +79,4 @@ void MainView::initializeGL()
                                 reinterpret_cast<GLvoid *>(6 * sizeof(GLfloat)));
         glEnableVertexAttribArray(2);
     }
-
-    // enable anti-aliasing
-    //glfwWindowHint(GLFW_SAMPLES, 4);
-    //glEnable(GL_MULTISAMPLE);
 }

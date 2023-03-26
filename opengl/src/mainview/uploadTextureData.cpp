@@ -1,6 +1,6 @@
 #include "mainview.ih"
 
-void Mainview::uploadTextureData(AbstractModel const &model)
+void MainView::uploadTextureData(AbstractModel const &model)
 {
     glTexImage2D(
         GL_TEXTURE_2D,

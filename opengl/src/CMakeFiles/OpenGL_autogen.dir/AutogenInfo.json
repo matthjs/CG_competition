@@ -574,12 +574,22 @@
 			null
 		],
 		[
+			"/home/matthijs/programming/cgcomp/opengl/src/mainview/setTextureInterpretation.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/matthijs/programming/cgcomp/opengl/src/mainview/updateModelTransform.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/matthijs/programming/cgcomp/opengl/src/mainview/updateProjectionTransform.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matthijs/programming/cgcomp/opengl/src/mainview/uploadTextureData.cpp",
 			"MU",
 			null
 		],

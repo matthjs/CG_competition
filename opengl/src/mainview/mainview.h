@@ -30,7 +30,7 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
     std::vector<uniformMap> d_shaderUniforms;
     ShadingMode d_currentShadingMode;
 
-    // transformations
+    // perspective projection transformation (fixed)
     QMatrix4x4 d_projectionTransform;
 
     // polymorphic models
@@ -57,8 +57,8 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
 
     protected:
         void initializeGL() override;
-        void resizeGL(int newWidth, int newHeight) override;
         void paintGL() override;
+        void resizeGL(int newWidth, int newHeight) override;
 
         // Functions for keyboard input events
         void keyPressEvent(QKeyEvent *ev) override;
@@ -79,13 +79,18 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
         void loadMesh(QString const &filename);    // 1
         void loadMesh(QString const &filename, QString const &textureFileName);    // 2
         // void loadMesh(QString const &filename, QVector<QString> const &textureNames);
-        void destroyModelBuffers();
+
+        // update transformation matrices based on relevant events
         void updateProjectionTransform();
         void updateModelTransforms(); 
 
+        void destroyModelBuffers();    // run by destructor
+
+        // texture related
         void setTextureInterpretation();
         void uploadTextureData(AbstractModel const &model);
 
+        // shading related -> addresses are placed in s_shaderswitch (see data.cc)
         void phongShading();
         void normalShading();
         void gouraudShading();
