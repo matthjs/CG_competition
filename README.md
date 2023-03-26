@@ -25,18 +25,18 @@ In the src directory do:
 
 # Showcase
 Here is how the cat model looks like using cell shading:
-![alt text](./logs/cat_cell.png "Cat with cell shading.")
+!["Cat with cell shading."](./logs/cat_cell.png)
 
 Cell-shading is commonly used in anime-style games/3d animations to
 replicate the style and feel of the 2D drawings. So here is an
 example of cell shading on an anime character:
-![alt text](./logs/emilia_cell_text.png "Emilia from Re Zero with cell shading.")
+!["Emilia from Re Zero with cell shading."](./logs/emilia_cell_text.png)
 which fits a bit better than the phong illumination:
-![alt text](./logs/emilia_phong_text.png "Emilia from Re Zero with phong shading.")
+!["Emilia from Re Zero with phong shading."](./logs/emilia_phong_text.png)
 (Note that the texture mapping is not correct)
 
 
 Unrelated. But when you normalize all vertices on the cat model you
 get this monstrosity:
-![alt text](./logs/cat?_phong.png "Uhhhhh")
+!["Uhhhhh"](./logs/cat?_phong.png)
 (note that Phong shader is used here)
