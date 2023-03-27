@@ -12,14 +12,14 @@ not unitized and are all fixed on the same location in world space.
 There are also a few fixes made from the base code:
 - Optimized model rendering by loading static mesh data in initializeGL, instead of in paintGL
     (which in hindsight was kind of obvious to do so).
-- Improved efficientcy of shader switching by ensuring that uniforms are extracted only the
+- Improved efficiency of shader switching by ensuring that uniforms are extracted only the
     first time the shader is loaded.
 
 Compiling the code:
 I do not use QTCREATOR so I will describe here how to build the project using the
 existing build utilities.
 In the src directory do:
-- run "cmake" CMakeLists.txt to generate the Makefile
+- run "cmake CMakeLists.txt" to generate the Makefile
 - run "make"
 - run "./OpenGL"
 
