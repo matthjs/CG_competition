@@ -68,7 +68,7 @@ void main()
         attenuation = 1.0 / dist;    // linear attenuation
     }
 
-    vec3 textureColor = vec3(0.2F, 0.2F, 0.2F); //texture(u_samplerUniform, textureCoords).xyz;
+    vec3 textureColor = texture(u_samplerUniform, textureCoords).xyz;
 
     // default: add ambient component
     vec3 fragmentColor = vec3(textureColor * ka);

@@ -34,7 +34,7 @@ void MainView::initializeGL()
 
     createShaderProgram();
 
-    loadMesh("./models/emilia/source/emilia-posed.obj", "./textures/emilia-texture.png");
+    loadMesh("./models/cat.obj", "./textures/cat_diff.png");
 
     // Initialize transformations
     updateProjectionTransform();

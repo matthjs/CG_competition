@@ -16,7 +16,7 @@ There are also a few fixes made from the base code:
     first time the shader is loaded.
 
 Compiling the code:
-I do not use CGCREATER so I will describe here how to build the project using the
+I do not use QTCREATOR so I will describe here how to build the project using the
 existing build utilities.
 In the src directory do:
 - run "cmake" CMakeLists.txt to generate the Makefile
