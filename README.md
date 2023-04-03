@@ -41,4 +41,4 @@ get this monstrosity:
 (note that Phong shader is used here)'
 
 # Update
-Added support for multiple textures (around ~27-03-2023)
+Added support for multiple textures (around 27-03-2023)
