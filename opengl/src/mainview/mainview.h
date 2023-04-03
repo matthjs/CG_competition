@@ -76,9 +76,8 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
 
     private:
         void createShaderProgram();
-        void loadMesh(QString const &filename);    // 1
-        void loadMesh(QString const &filename, QString const &textureFileName);    // 2
-        void loadMesh(QString const &filename, QVector<QString> const &textureNames);
+        void loadMesh(QString const &filename, QString const &textureFileName);    // 1
+        void loadMesh(QString const &filename, QVector<QString> const &textureNames); // 2
 
         // update transformation matrices based on relevant events
         void updateProjectionTransform();

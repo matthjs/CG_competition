@@ -39,24 +39,6 @@ void MainView::initializeGL()
     { 
       "./textures/cat_diff.png"
     });
-    
-    /*
-    loadMesh("./models/emilia/source/emilia-posed.obj", QVector<QString>{
-      "./models/emilia/textures/babado.png",
-      "./models/emilia/textures/cabelo-frente.png",
-      "./models/emilia/textures/cabelo-traz.png",
-  	  "./models/emilia/textures/crista-tex.png",
-      "./models/emilia/textures/gradiente.png",
-      "./models/emilia/textures/Material.006_Base_Color.png",
-      "./models/emilia/textures/olho.png",
-      "./models/emilia/textures/pele_png.png",
-      "./models/emilia/textures/rocha.png",
-      "./models/emilia/textures/roupa-emilia.png",
-      "./models/emilia/textures/saia-.png",
-      "./models/emilia/textures/sutiã.png",
-      "./models/emilia/textures/transparent.png"
-    });
-    */
 
     // Initialize transformations
     updateProjectionTransform();
@@ -85,20 +67,16 @@ void MainView::initializeGL()
             uploadTextureData(model->texture(idx));
         }
 
-        // this should be in seperate function
+        // This should be in seperate function
         // let OpenGL know which texture unit each shader sampler belongs to
+        // convention: Texture0 -> 0 -> sampler2D[0]
+        // note that the uniforms are not saved
         QString uniformName{ "u_samplerUniform" };
 
         for (size_t idx = 0; idx != model->numTextures(); ++idx)
         {
             QString uName = uniformName + "[" + QString::number(idx) + "]";
 
-            qDebug() << uName << '\n';
-            qDebug() << d_shaderProgram.uniformLocation(uName) << '\n';
-            /*
-            d_shaderUniforms[d_currentShadingMode][uName] =
-                std::unique_ptr<GLint>{ new GLint(d_shaderProgram.uniformLocation(uName)) };
-                */
             glUniform1i(d_shaderProgram.uniformLocation(uName), idx);
         }
         // upload texture data
