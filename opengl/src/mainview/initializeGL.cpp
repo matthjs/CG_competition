@@ -61,24 +61,13 @@ void MainView::initializeGL()
         // texture stuff
         for (size_t idx = 0, end = model->numTextures(); idx != end; ++idx)
         {
-            //glActiveTexture(GL_TEXTURE0 + idx);
             glBindTexture(GL_TEXTURE_2D, model->textureID(idx));
             setTextureInterpretation();
             uploadTextureData(model->texture(idx));
         }
 
         // This should be in seperate function
-        // let OpenGL know which texture unit each shader sampler belongs to
-        // convention: Texture0 -> 0 -> sampler2D[0]
-        // note that the uniforms are not saved
-        QString uniformName{ "u_samplerUniform" };
-
-        for (size_t idx = 0; idx != model->numTextures(); ++idx)
-        {
-            QString uName = uniformName + "[" + QString::number(idx) + "]";
-
-            glUniform1i(d_shaderProgram.uniformLocation(uName), idx);
-        }
+        initializeSamplers(model->numTextures());
 
         // upload vertices to the GL_ARRAY_BUFFER
         glBufferData(GL_ARRAY_BUFFER, model->getVertices().size() * sizeof(Vertex), model->getVertices().data(), GL_STATIC_DRAW);

@@ -1,5 +1,8 @@
 #include "mainview.ih"
 
+/**
+ * @brief MainView::loadMesh same as first overload but loads in a vector of texture file names
+ */
 void MainView::loadMesh(QString const &filename, QVector<QString> const &textureNames)
 {
     std::unique_ptr<AbstractModel> model_ptr{ new Model{ filename } };

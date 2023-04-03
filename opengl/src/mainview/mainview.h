@@ -87,6 +87,7 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
 
         // texture related
         void setTextureInterpretation();
+        void initializeSamplers(size_t numTextures);
         void uploadTextureData(QImage const &texture);
 
         // shading related -> addresses are placed in s_shaderswitch (see data.cc)

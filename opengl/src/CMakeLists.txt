@@ -54,6 +54,7 @@ qt_add_executable(OpenGL WIN32 MACOSX_BUNDLE
     mainview/loadMesh2.cpp
     mainview/setTextureInterpretation.cpp
     mainview/uploadTextureData.cpp
+    mainview/initializeSamplers.cpp
     
     mainwindow/mainwindow.h
     mainwindow/mainwindow.ih
@@ -98,6 +99,7 @@ qt_add_executable(OpenGL WIN32 MACOSX_BUNDLE
     model/texture.cpp
     model/textureData.cpp
     model/textureID.cpp
+    model/enableTextureID.cpp
 
     vertex/vertex.h
     vertex/vertex.ih

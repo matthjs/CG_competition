@@ -8,10 +8,8 @@ Model::Model(QString const &filename)
 {
     qDebug() << ":: Loading model:" << filename;
     QFile file(filename);
-    qDebug() << file.exists(filename) << '\n';
     if (file.open(QIODevice::ReadOnly))
     {
-        qDebug() << "processing model...\n";
         QTextStream in(&file);
 
         QString line;

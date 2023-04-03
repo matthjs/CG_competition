@@ -54,7 +54,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 120,
+				"line" : 122,
 				"parent" : 0
 			},
 			{
@@ -66,7 +66,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 119,
+				"line" : 121,
 				"parent" : 0
 			}
 		]
@@ -194,7 +194,7 @@
 				28,
 				29,
 				30,
-				33,
+				31,
 				34,
 				35,
 				36,
@@ -207,7 +207,7 @@
 				43,
 				44,
 				45,
-				48,
+				46,
 				49,
 				50,
 				51,
@@ -230,11 +230,13 @@
 				68,
 				69,
 				70,
-				73,
-				74,
+				71,
+				72,
 				75,
+				76,
 				77,
-				81
+				79,
+				83
 			]
 		}
 	],
@@ -327,7 +329,7 @@
 				28,
 				29,
 				30,
-				33,
+				31,
 				34,
 				35,
 				36,
@@ -340,7 +342,7 @@
 				43,
 				44,
 				45,
-				48,
+				46,
 				49,
 				50,
 				51,
@@ -363,11 +365,13 @@
 				68,
 				69,
 				70,
-				73,
-				74,
+				71,
+				72,
 				75,
+				76,
 				77,
-				81
+				79,
+				83
 			]
 		},
 		{
@@ -378,10 +382,10 @@
 				2,
 				5,
 				8,
-				32,
-				47,
-				72,
-				79
+				33,
+				48,
+				74,
+				81
 			]
 		},
 		{
@@ -390,19 +394,19 @@
 			[
 				4,
 				7,
-				31,
-				46,
-				71,
-				76,
+				32,
+				47,
+				73,
 				78,
-				80
+				80,
+				82
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				82
+				84
 			]
 		}
 	],
@@ -587,6 +591,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "mainview/uploadTextureData.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "mainview/initializeSamplers.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -823,6 +833,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "model/textureID.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "model/enableTextureID.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

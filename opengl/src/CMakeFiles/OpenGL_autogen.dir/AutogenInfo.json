@@ -524,6 +524,11 @@
 			null
 		],
 		[
+			"/home/matthijs/programming/cgcomp/opengl/src/mainview/initializeSamplers.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/matthijs/programming/cgcomp/opengl/src/mainview/loadMesh1.cpp",
 			"MU",
 			null
@@ -675,6 +680,11 @@
 		],
 		[
 			"/home/matthijs/programming/cgcomp/opengl/src/model/destructor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/matthijs/programming/cgcomp/opengl/src/model/enableTextureID.cpp",
 			"MU",
 			null
 		],
