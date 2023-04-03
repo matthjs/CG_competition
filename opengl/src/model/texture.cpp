@@ -1,5 +1,9 @@
 #include "model.ih"
 
+ QImage const &Model::texture(size_t idx) const
+ {
+    return d_textures[idx];
+ }
 /**
  * @brief Model::texture is a getter for d_texture.
  */

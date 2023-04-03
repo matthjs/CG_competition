@@ -39,7 +39,12 @@ void MainView::paintGL()
         );
 
         glBindVertexArray(model->VAO());
-        glBindTexture(GL_TEXTURE_2D, model->textureID());
+
+        for (size_t idx = 0, end = model->numTextures(); idx != end; ++idx)
+        {
+            glActiveTexture(GL_TEXTURE0 + idx); // activate the texture unit first before binding texture
+            glBindTexture(GL_TEXTURE_2D, model->textureID(idx));
+        }
 
         glDrawArrays(GL_TRIANGLES, 0, model->getVertices().size());
     }

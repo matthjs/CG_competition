@@ -34,7 +34,6 @@ void MainView::cellShading()
             "u_unlit_color",
             "u_spec_color",
             "u_view",
-            "u_samplerUniform",
             "u_diffuseTreshold",
             "u_unlitOutlineThickness",
             "u_litOutlineThickness",

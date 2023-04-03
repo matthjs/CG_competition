@@ -1,6 +1,6 @@
 # CG_competition
 
-This repository contains my OpenGL submission for the computer graphics competitions.
+This repository contains my OpenGL submission for the competition in the computer graphics course.
 Currently the main things that is added is basic cell shading, which you can enable
 in the UI alongside the other shaders (note that the gouraud shading does not load any texture data).
 The other addition is adding anisotropic filtering.
@@ -10,7 +10,8 @@ It is worth noting that the code already supports multiple model loading, howeve
 not unitized and are all fixed on the same location in world space.
 
 There are also a few fixes made from the base code:
-- Optimized model rendering by loading static mesh data in initializeGL, instead of in paintGL
+- Optimized model rendering by loading static mesh data in initializeGL
+    (before render loop), instead of in paintGL (during render loop)
     (which in hindsight was kind of obvious to do so).
 - Improved efficiency of shader switching by ensuring that uniforms are extracted only the
     first time the shader is loaded.
@@ -39,4 +40,7 @@ which fits a bit better than the phong illumination:
 Unrelated. But when you normalize all vertices on the cat model you
 get this monstrosity:
 !["Uhhhhh"](./opengl/src/logs/catt_phong.png)
-(note that Phong shader is used here)
+(note that Phong shader is used here)'
+
+# Update
+Added support for multiple textures.

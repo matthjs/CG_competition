@@ -15,7 +15,19 @@ generally to give a more cartoon-ish look.
 // These must have the same type and name!
 in vec3 vertNormal;
 in vec3 position;
-in vec2 textureCoords;
+in vec2 textureCoords0;
+in vec2 textureCoords1;
+in vec2 textureCoords2;
+in vec2 textureCoords3;
+in vec2 textureCoords4;
+in vec2 textureCoords5;
+in vec2 textureCoords6;
+in vec2 textureCoords7;
+in vec2 textureCoords8;
+in vec2 textureCoords9;
+in vec2 textureCoords10;
+in vec2 textureCoords11;
+in vec2 textureCoords12;
 
 // Specify the Uniforms of the fragment shaders
 // uniform vec3 lightPosition; // for example
@@ -36,7 +48,7 @@ uniform vec4 u_spec_color = vec4(1.0F, 1.0F, 1.0F, 1.0F);
 uniform vec3 u_view = vec3(0.0F, 0.0F, 0.0F);
 
 // texture related
-uniform sampler2D u_samplerUniform;
+uniform sampler2D u_samplerUniform[13];
 
 // more shading properties
 uniform float u_diffuseTreshold = 0.0F;
@@ -68,7 +80,24 @@ void main()
         attenuation = 1.0 / dist;    // linear attenuation
     }
 
-    vec3 textureColor = texture(u_samplerUniform, textureCoords).xyz;
+    vec3 textureColor;
+    float weight = 1;
+
+    textureColor += weight * texture(u_samplerUniform[0], textureCoords0).xyz;
+    /*
+    textureColor += weight * texture(u_samplerUniform[1], textureCoords1).xyz;
+    textureColor += weight * texture(u_samplerUniform[2], textureCoords2).xyz;
+    textureColor += weight * texture(u_samplerUniform[3], textureCoords3).xyz;
+    textureColor += weight * texture(u_samplerUniform[4], textureCoords4).xyz;
+    textureColor += weight * texture(u_samplerUniform[5], textureCoords5).xyz;
+    textureColor += weight * texture(u_samplerUniform[6], textureCoords6).xyz;
+    textureColor += weight * texture(u_samplerUniform[7], textureCoords7).xyz;
+    textureColor += weight * texture(u_samplerUniform[8], textureCoords8).xyz;
+    textureColor += weight * texture(u_samplerUniform[9], textureCoords9).xyz;
+    textureColor += weight * texture(u_samplerUniform[10], textureCoords10).xyz;
+    textureColor += weight * texture(u_samplerUniform[11], textureCoords11).xyz;
+    textureColor += weight * texture(u_samplerUniform[12], textureCoords12).xyz;
+    */
 
     // default: add ambient component
     vec3 fragmentColor = vec3(textureColor * ka);

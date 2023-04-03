@@ -36,9 +36,11 @@ class AbstractModel
         virtual QImage const &texture() const = 0;
 
         // general case here
-        // virtual GLuint &enableTextureID() = 0;
-        // virtual void addTexture(QString const &textureName) = 0;
-        // virtual QVector<quint8> textureData(size_t idx) const = 0;
+        virtual GLuint &textureID(size_t idx) = 0;
+        virtual GLuint &enableTextureID() = 0;
+        virtual void addTexture(QString const &textureName) = 0;
+        virtual QVector<quint8> textureData(size_t idx) const = 0;
+        virtual QImage const &texture(size_t idx) const = 0;
 
         // required getters
         virtual QMatrix4x4 &meshTransform() = 0;
@@ -46,6 +48,7 @@ class AbstractModel
         virtual QVector<Vertex> &getVertices() = 0;
 
         // good to know
+        virtual size_t numTextures() const = 0;
         virtual bool hasTexture() const = 0;
         virtual bool hasNormals() const = 0;
 };

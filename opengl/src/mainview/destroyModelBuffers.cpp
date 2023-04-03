@@ -9,6 +9,6 @@ void MainView::destroyModelBuffers()
     {
         glDeleteBuffers(1, &model->VBO());
         glDeleteVertexArrays(1, &model->VAO());
-        glDeleteTextures(1, &model->textureID());
+        glDeleteTextures(model->numTextures(), &model->textureID(0));
     }
 }

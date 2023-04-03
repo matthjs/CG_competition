@@ -34,7 +34,29 @@ void MainView::initializeGL()
 
     createShaderProgram();
 
-    loadMesh("./models/cat.obj", "./textures/cat_diff.png");
+    
+    loadMesh("./models/cat.obj", QVector<QString>
+    { 
+      "./textures/cat_diff.png"
+    });
+    
+    /*
+    loadMesh("./models/emilia/source/emilia-posed.obj", QVector<QString>{
+      "./models/emilia/textures/babado.png",
+      "./models/emilia/textures/cabelo-frente.png",
+      "./models/emilia/textures/cabelo-traz.png",
+  	  "./models/emilia/textures/crista-tex.png",
+      "./models/emilia/textures/gradiente.png",
+      "./models/emilia/textures/Material.006_Base_Color.png",
+      "./models/emilia/textures/olho.png",
+      "./models/emilia/textures/pele_png.png",
+      "./models/emilia/textures/rocha.png",
+      "./models/emilia/textures/roupa-emilia.png",
+      "./models/emilia/textures/saia-.png",
+      "./models/emilia/textures/sutiã.png",
+      "./models/emilia/textures/transparent.png"
+    });
+    */
 
     // Initialize transformations
     updateProjectionTransform();
@@ -45,6 +67,8 @@ void MainView::initializeGL()
     glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT,&f);
     glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_MAX_ANISOTROPY_EXT,f);
 
+    d_shaderProgram.bind();
+  
     // upload static model information to GPU/shaders
     // note that generating VBO and VAO buffers is done in loadmesh()
     for (auto &model : d_models)
@@ -53,13 +77,31 @@ void MainView::initializeGL()
         glBindBuffer(GL_ARRAY_BUFFER, model->VBO());
 
         // texture stuff
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, model->textureID());
-        // set how openGL will interpret texture
-        setTextureInterpretation();
+        for (size_t idx = 0, end = model->numTextures(); idx != end; ++idx)
+        {
+            //glActiveTexture(GL_TEXTURE0 + idx);
+            glBindTexture(GL_TEXTURE_2D, model->textureID(idx));
+            setTextureInterpretation();
+            uploadTextureData(model->texture(idx));
+        }
+
+        // this should be in seperate function
+        // let OpenGL know which texture unit each shader sampler belongs to
+        QString uniformName{ "u_samplerUniform" };
+
+        for (size_t idx = 0; idx != model->numTextures(); ++idx)
+        {
+            QString uName = uniformName + "[" + QString::number(idx) + "]";
+
+            qDebug() << uName << '\n';
+            qDebug() << d_shaderProgram.uniformLocation(uName) << '\n';
+            /*
+            d_shaderUniforms[d_currentShadingMode][uName] =
+                std::unique_ptr<GLint>{ new GLint(d_shaderProgram.uniformLocation(uName)) };
+                */
+            glUniform1i(d_shaderProgram.uniformLocation(uName), idx);
+        }
         // upload texture data
-        uploadTextureData(*model);
-        glGenerateMipmap(GL_TEXTURE_2D);
 
         // upload vertices to the GL_ARRAY_BUFFER
         glBufferData(GL_ARRAY_BUFFER, model->getVertices().size() * sizeof(Vertex), model->getVertices().data(), GL_STATIC_DRAW);
@@ -79,4 +121,6 @@ void MainView::initializeGL()
                                 reinterpret_cast<GLvoid *>(6 * sizeof(GLfloat)));
         glEnableVertexAttribArray(2);
     }
+
+    d_shaderProgram.release();
 }

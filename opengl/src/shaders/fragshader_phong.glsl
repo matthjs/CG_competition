@@ -26,7 +26,7 @@ uniform vec3 light_color = vec3(1.0F, 1.0F, 1.0F);
 uniform vec3 view = vec3(0.0F, 0.0F, 0.0F);
 
 // texture related
-uniform sampler2D samplerUniform;
+uniform sampler2D samplerUniform[13];
 
 // Specify the output of the fragment shader
 // Usually a vec4 describing a color (Red, Green, Blue, Alpha/Transparency)
@@ -34,7 +34,7 @@ out vec4 fColor;
 
 void main() {
   // evaluate phong illumination model
-  vec3 textureColor = texture(samplerUniform, textureCoords).xyz;
+  vec3 textureColor = texture(samplerUniform[0], textureCoords).xyz;
 
   vec3 ambient = textureColor * ka;
 

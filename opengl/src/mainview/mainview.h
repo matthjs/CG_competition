@@ -78,7 +78,7 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
         void createShaderProgram();
         void loadMesh(QString const &filename);    // 1
         void loadMesh(QString const &filename, QString const &textureFileName);    // 2
-        // void loadMesh(QString const &filename, QVector<QString> const &textureNames);
+        void loadMesh(QString const &filename, QVector<QString> const &textureNames);
 
         // update transformation matrices based on relevant events
         void updateProjectionTransform();
@@ -88,7 +88,7 @@ class MainView: public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
 
         // texture related
         void setTextureInterpretation();
-        void uploadTextureData(AbstractModel const &model);
+        void uploadTextureData(QImage const &texture);
 
         // shading related -> addresses are placed in s_shaderswitch (see data.cc)
         void phongShading();

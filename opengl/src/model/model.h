@@ -32,8 +32,8 @@ class Model: public AbstractModel
     GLuint d_textureID;
     QImage d_texture;
 
-    // QVector<GLuint> d_textureIDs;
-    // QVector<QImage> d_textures;
+    QVector<GLuint> d_textureIDs;
+    QVector<QImage> d_textures;
 
     // Intermediate storage of values
     QVector<QVector3D> vertices_indexed;
@@ -72,10 +72,13 @@ class Model: public AbstractModel
         QVector<quint8> textureData() const override;
         QImage const &texture() const override;
 
-        // virtual GLuint &enableTextureID() = 0;
-        // void addTexture(QString const &textureNames) override;
-        // QVector<quint8> textureData(size_t idx) const override;
+        GLuint &textureID(size_t idx) override;
+        GLuint &enableTextureID() override;
+        void addTexture(QString const &textureNames) override;
+        QVector<quint8> textureData(size_t idx) const override;
+        QImage const &texture(size_t idx) const override;
 
+        size_t numTextures() const override; 
         bool hasTexture() const override;
         bool hasNormals() const override;
 
@@ -120,6 +123,11 @@ class Model: public AbstractModel
 };
 
 #endif  // MODEL_H
+
+inline size_t Model::numTextures() const
+{
+    return d_textures.size();
+}
 
 /**
  * @brief Model::getCoords Get all coordinates in the mesh. The coordinates are
