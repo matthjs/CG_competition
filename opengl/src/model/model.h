@@ -66,12 +66,8 @@ class Model: public AbstractModel
 
         GLuint &VBO() override;
         GLuint &VAO() override;
-    
-        GLuint &textureID() override;
-        void setTexture(QImage const &image) override;
-        QVector<quint8> textureData() const override;
-        QImage const &texture() const override;
 
+        // texture handling
         GLuint &textureID(size_t idx) override;
         GLuint &enableTextureID() override;
         void addTexture(QString const &textureNames) override;

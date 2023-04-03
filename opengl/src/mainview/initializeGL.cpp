@@ -79,7 +79,6 @@ void MainView::initializeGL()
 
             glUniform1i(d_shaderProgram.uniformLocation(uName), idx);
         }
-        // upload texture data
 
         // upload vertices to the GL_ARRAY_BUFFER
         glBufferData(GL_ARRAY_BUFFER, model->getVertices().size() * sizeof(Vertex), model->getVertices().data(), GL_STATIC_DRAW);

@@ -4,8 +4,6 @@ This repository contains my OpenGL submission for the competition in the compute
 Currently the main things that is added is basic cell shading, which you can enable
 in the UI alongside the other shaders (note that the gouraud shading does not load any texture data).
 The other addition is adding anisotropic filtering.
-I originally intended to add support for multiple textures (+ raw data loading), but I end up not setting
-aside enough time for that. Hence the code currently includes some incomplete code related to that.
 It is worth noting that the code already supports multiple model loading, however all models are
 not unitized and are all fixed on the same location in world space.
 
@@ -43,4 +41,4 @@ get this monstrosity:
 (note that Phong shader is used here)'
 
 # Update
-Added support for multiple textures.
+Added support for multiple textures (around ~27-03-2023)

@@ -664,6 +664,11 @@
 			null
 		],
 		[
+			"/home/matthijs/programming/cgcomp/opengl/src/model/addTexture.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/matthijs/programming/cgcomp/opengl/src/model/alignData.cpp",
 			"MU",
 			null
@@ -709,11 +714,6 @@
 			null
 		],
 		[
-			"/home/matthijs/programming/cgcomp/opengl/src/model/model2.cpp",
-			"MU",
-			null
-		],
-		[
 			"/home/matthijs/programming/cgcomp/opengl/src/model/normalTransform.cpp",
 			"MU",
 			null
@@ -735,11 +735,6 @@
 		],
 		[
 			"/home/matthijs/programming/cgcomp/opengl/src/model/parseVertex.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/matthijs/programming/cgcomp/opengl/src/model/setTexture.cpp",
 			"MU",
 			null
 		],

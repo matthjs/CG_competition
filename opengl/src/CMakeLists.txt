@@ -93,9 +93,8 @@ qt_add_executable(OpenGL WIN32 MACOSX_BUNDLE
     model/normalTransform.cpp
     model/hasTexture.cpp
     model/hasNormals.cpp
-    model/model2.cpp
 
-    model/setTexture.cpp
+    model/addTexture.cpp
     model/texture.cpp
     model/textureData.cpp
     model/textureID.cpp

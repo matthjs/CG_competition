@@ -54,7 +54,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 121,
+				"line" : 120,
 				"parent" : 0
 			},
 			{
@@ -66,7 +66,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 120,
+				"line" : 119,
 				"parent" : 0
 			}
 		]
@@ -230,12 +230,11 @@
 				68,
 				69,
 				70,
-				71,
+				73,
 				74,
 				75,
-				76,
-				78,
-				82
+				77,
+				81
 			]
 		}
 	],
@@ -364,12 +363,11 @@
 				68,
 				69,
 				70,
-				71,
+				73,
 				74,
 				75,
-				76,
-				78,
-				82
+				77,
+				81
 			]
 		},
 		{
@@ -382,8 +380,8 @@
 				8,
 				32,
 				47,
-				73,
-				80
+				72,
+				79
 			]
 		},
 		{
@@ -394,17 +392,17 @@
 				7,
 				31,
 				46,
-				72,
-				77,
-				79,
-				81
+				71,
+				76,
+				78,
+				80
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				83
+				82
 			]
 		}
 	],
@@ -806,13 +804,7 @@
 		{
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "model/model2.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "model/setTexture.cpp",
+			"path" : "model/addTexture.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -1,7 +1,8 @@
 #include "model.ih"
 
 /**
- *
+ * Adds Gluint to textureID internal vector
+ * Returns Gluint which can be addressed
  */
 GLuint &Model::enableTextureID()
 {
@@ -12,9 +13,4 @@ GLuint &Model::enableTextureID()
 GLuint &Model::textureID(size_t idx)
 {
     return d_textureIDs[idx];
-}
-
-GLuint &Model::textureID()
-{
-    return d_textureID;
 }

@@ -28,12 +28,6 @@ class AbstractModel
         // getters for VAO and VBO
         virtual GLuint &VBO() = 0;
         virtual GLuint &VAO() = 0;
-        
-        // redundant single texture case still here
-        virtual GLuint &textureID() = 0;
-        virtual void setTexture(QImage const &image) = 0;
-        virtual QVector<quint8> textureData() const = 0;
-        virtual QImage const &texture() const = 0;
 
         // general case here
         virtual GLuint &textureID(size_t idx) = 0;

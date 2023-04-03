@@ -886,38 +886,24 @@ CMakeFiles/OpenGL.dir/model/hasNormals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/model/hasNormals.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/programming/cgcomp/opengl/src/model/hasNormals.cpp -o CMakeFiles/OpenGL.dir/model/hasNormals.cpp.s
 
-CMakeFiles/OpenGL.dir/model/model2.cpp.o: CMakeFiles/OpenGL.dir/flags.make
-CMakeFiles/OpenGL.dir/model/model2.cpp.o: model/model2.cpp
-CMakeFiles/OpenGL.dir/model/model2.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/OpenGL.dir/model/model2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/model2.cpp.o -MF CMakeFiles/OpenGL.dir/model/model2.cpp.o.d -o CMakeFiles/OpenGL.dir/model/model2.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/model2.cpp
+CMakeFiles/OpenGL.dir/model/addTexture.cpp.o: CMakeFiles/OpenGL.dir/flags.make
+CMakeFiles/OpenGL.dir/model/addTexture.cpp.o: model/addTexture.cpp
+CMakeFiles/OpenGL.dir/model/addTexture.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/OpenGL.dir/model/addTexture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/addTexture.cpp.o -MF CMakeFiles/OpenGL.dir/model/addTexture.cpp.o.d -o CMakeFiles/OpenGL.dir/model/addTexture.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/addTexture.cpp
 
-CMakeFiles/OpenGL.dir/model/model2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/model/model2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/programming/cgcomp/opengl/src/model/model2.cpp > CMakeFiles/OpenGL.dir/model/model2.cpp.i
+CMakeFiles/OpenGL.dir/model/addTexture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/model/addTexture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/programming/cgcomp/opengl/src/model/addTexture.cpp > CMakeFiles/OpenGL.dir/model/addTexture.cpp.i
 
-CMakeFiles/OpenGL.dir/model/model2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/model/model2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/programming/cgcomp/opengl/src/model/model2.cpp -o CMakeFiles/OpenGL.dir/model/model2.cpp.s
-
-CMakeFiles/OpenGL.dir/model/setTexture.cpp.o: CMakeFiles/OpenGL.dir/flags.make
-CMakeFiles/OpenGL.dir/model/setTexture.cpp.o: model/setTexture.cpp
-CMakeFiles/OpenGL.dir/model/setTexture.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/OpenGL.dir/model/setTexture.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/setTexture.cpp.o -MF CMakeFiles/OpenGL.dir/model/setTexture.cpp.o.d -o CMakeFiles/OpenGL.dir/model/setTexture.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/setTexture.cpp
-
-CMakeFiles/OpenGL.dir/model/setTexture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OpenGL.dir/model/setTexture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthijs/programming/cgcomp/opengl/src/model/setTexture.cpp > CMakeFiles/OpenGL.dir/model/setTexture.cpp.i
-
-CMakeFiles/OpenGL.dir/model/setTexture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/model/setTexture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/programming/cgcomp/opengl/src/model/setTexture.cpp -o CMakeFiles/OpenGL.dir/model/setTexture.cpp.s
+CMakeFiles/OpenGL.dir/model/addTexture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OpenGL.dir/model/addTexture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthijs/programming/cgcomp/opengl/src/model/addTexture.cpp -o CMakeFiles/OpenGL.dir/model/addTexture.cpp.s
 
 CMakeFiles/OpenGL.dir/model/texture.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/model/texture.cpp.o: model/texture.cpp
 CMakeFiles/OpenGL.dir/model/texture.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/OpenGL.dir/model/texture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/OpenGL.dir/model/texture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/texture.cpp.o -MF CMakeFiles/OpenGL.dir/model/texture.cpp.o.d -o CMakeFiles/OpenGL.dir/model/texture.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/texture.cpp
 
 CMakeFiles/OpenGL.dir/model/texture.cpp.i: cmake_force
@@ -931,7 +917,7 @@ CMakeFiles/OpenGL.dir/model/texture.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/model/textureData.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/model/textureData.cpp.o: model/textureData.cpp
 CMakeFiles/OpenGL.dir/model/textureData.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/OpenGL.dir/model/textureData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/OpenGL.dir/model/textureData.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/textureData.cpp.o -MF CMakeFiles/OpenGL.dir/model/textureData.cpp.o.d -o CMakeFiles/OpenGL.dir/model/textureData.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/textureData.cpp
 
 CMakeFiles/OpenGL.dir/model/textureData.cpp.i: cmake_force
@@ -945,7 +931,7 @@ CMakeFiles/OpenGL.dir/model/textureData.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/model/textureID.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/model/textureID.cpp.o: model/textureID.cpp
 CMakeFiles/OpenGL.dir/model/textureID.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/OpenGL.dir/model/textureID.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/OpenGL.dir/model/textureID.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/model/textureID.cpp.o -MF CMakeFiles/OpenGL.dir/model/textureID.cpp.o.d -o CMakeFiles/OpenGL.dir/model/textureID.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/model/textureID.cpp
 
 CMakeFiles/OpenGL.dir/model/textureID.cpp.i: cmake_force
@@ -959,7 +945,7 @@ CMakeFiles/OpenGL.dir/model/textureID.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o: vertex/vertex1.cpp
 CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o -MF CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o.d -o CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/vertex/vertex1.cpp
 
 CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.i: cmake_force
@@ -973,7 +959,7 @@ CMakeFiles/OpenGL.dir/vertex/vertex1.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o: vertex/vertex2.cpp
 CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o -MF CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o.d -o CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/vertex/vertex2.cpp
 
 CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.i: cmake_force
@@ -987,7 +973,7 @@ CMakeFiles/OpenGL.dir/vertex/vertex2.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o: vertex/getTextureCoords.cpp
 CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o -MF CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o.d -o CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/vertex/getTextureCoords.cpp
 
 CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.i: cmake_force
@@ -1001,7 +987,7 @@ CMakeFiles/OpenGL.dir/vertex/getTextureCoords.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/utility/utility.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/utility/utility.cpp.o: utility/utility.cpp
 CMakeFiles/OpenGL.dir/utility/utility.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/OpenGL.dir/utility/utility.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/OpenGL.dir/utility/utility.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/utility/utility.cpp.o -MF CMakeFiles/OpenGL.dir/utility/utility.cpp.o.d -o CMakeFiles/OpenGL.dir/utility/utility.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/utility/utility.cpp
 
 CMakeFiles/OpenGL.dir/utility/utility.cpp.i: cmake_force
@@ -1015,7 +1001,7 @@ CMakeFiles/OpenGL.dir/utility/utility.cpp.s: cmake_force
 CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OpenGL.dir/flags.make
 CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o: OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/matthijs/programming/cgcomp/opengl/src/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp
 
 CMakeFiles/OpenGL.dir/OpenGL_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -1085,8 +1071,7 @@ OpenGL_OBJECTS = \
 "CMakeFiles/OpenGL.dir/model/normalTransform.cpp.o" \
 "CMakeFiles/OpenGL.dir/model/hasTexture.cpp.o" \
 "CMakeFiles/OpenGL.dir/model/hasNormals.cpp.o" \
-"CMakeFiles/OpenGL.dir/model/model2.cpp.o" \
-"CMakeFiles/OpenGL.dir/model/setTexture.cpp.o" \
+"CMakeFiles/OpenGL.dir/model/addTexture.cpp.o" \
 "CMakeFiles/OpenGL.dir/model/texture.cpp.o" \
 "CMakeFiles/OpenGL.dir/model/textureData.cpp.o" \
 "CMakeFiles/OpenGL.dir/model/textureID.cpp.o" \
@@ -1156,8 +1141,7 @@ OpenGL: CMakeFiles/OpenGL.dir/model/vertices.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/normalTransform.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/hasTexture.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/hasNormals.cpp.o
-OpenGL: CMakeFiles/OpenGL.dir/model/model2.cpp.o
-OpenGL: CMakeFiles/OpenGL.dir/model/setTexture.cpp.o
+OpenGL: CMakeFiles/OpenGL.dir/model/addTexture.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/texture.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/textureData.cpp.o
 OpenGL: CMakeFiles/OpenGL.dir/model/textureID.cpp.o
@@ -1175,7 +1159,7 @@ OpenGL: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4
 OpenGL: /usr/lib/x86_64-linux-gnu/libGLX.so
 OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 OpenGL: CMakeFiles/OpenGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking CXX executable OpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthijs/programming/cgcomp/opengl/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable OpenGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
